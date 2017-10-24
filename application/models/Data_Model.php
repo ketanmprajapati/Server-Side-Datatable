@@ -131,8 +131,8 @@ class Data_Model extends CI_Model {
         $config['protocol'] = "smtp";
         $config['smtp_host'] = "ssl://smtp.googlemail.com";
         $config['smtp_port'] = "465";
-        $config['smtp_user'] = "lochawalapratik5@gmail.com";
-        $config['smtp_pass'] = "locho13pratik";
+        $config['smtp_user'] = "your email";
+        $config['smtp_pass'] = "your password";
         $config['charset'] = "utf-8";
         $config['mailtype'] = "html";
         $config['newline'] = "\r\n";
