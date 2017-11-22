@@ -46,6 +46,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 </ul>
             </header>
+			 <?php if ($this->session->userdata('error') != ""): ?>
+				<div id="errordiv1"
+					 class="alert <?php echo $this->session->userdata('errorcls'); ?> alert-dismissable">
+					<a href="#" class="close" data-dismiss="alert"
+					   aria-label="close">&times;</a>
+					<?php echo $this->session->userdata('error'); ?>
+				</div>
+            <?php
+			endif;
+				$this->session->unset_userdata('error');
+			?>
             <div class="panel-body">
                 <div class="tab-content">
                     <div id="home" class="tab-pane active">
